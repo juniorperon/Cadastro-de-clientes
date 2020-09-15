@@ -1,0 +1,43 @@
+h1 {
+    margin:0 auto;
+    max-width: 300px;
+   
+}
+
+body {
+    margin: 0px;
+    padding:0px;
+    align-items: center;
+    background: lightgray;
+}
+
+form {
+    font-size: 16px;
+    max-width: 500px;
+    margin:0 auto;
+    padding: 0 10px 10px 10px;
+}
+
+input {
+    width:475px;
+    padding: 10px;
+}
+
+button {
+    background-color: blue;
+    height:40px;
+    width: 140px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+    margin-top:10px;
+    
+}
+
+button:hover{
+    background-color: lightblue;
+}
+
+
+
