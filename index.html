@@ -5,35 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="atividade.js"></script>
 </head>
 <body>
-    <h1>Cadastro de clientes</h1>
-    <form name="cadastro" action="/cadastro.html">
-        <div>
-            <h2>Identidade</h2>
-            <section>
-                <p class="nome">Nome: </p><input name="nome" type="text" placeholder="Nome" size="100" maxlength="100" required="required"/>
-                <p class="email">Email: </p> <input name="email" type="email" placeholder="E-mail" size="100" maxlength="100" required="required"/>
-                <p class="cpf">CPF ou CNPJ: </p><input name="cpf" type="tel" placeholder="CPF ou CNPJ apenas numeros" size="100" maxlength="11" required="required"/>
-                <p class="telefone">Telefone: </p><input name="tel" type="tel" placeholder="telefone com ddd apenas numeros" size="100" maxlength="11" required="required"/>
-            </section>
+    
+    <form name="cadastro">
+        <h1>Cadastro de clientes</h1>
+            <div>
+                <h2>Identidade</h2>
+                
+                <label for="nome">Nome: </label> 
+                <input type="text" id="nomeid" placeholder="Nome Completo" required="required" name="nome" />
+
+                <label for="email">Email: </label> 
+                <input type="email" id="emailid" placeholder="Email@email.com" required="required" name="email" />
+
+                <label for="cpf">CPF: </label> 
+                <input type="text" id="cpfid" placeholder="xxx.xxx.xxx-xx" required="required" name="cpf" />
+
+                <label for="tel">Telefone: </label> 
+                <input type="tel" id="telid" placeholder="(xx)xxxxx-xxxx" required="required" name="tel" />
+
         </div>
         <div>
             <h2>Local</h2>
-            <section>
-                <p class="cep">CEP: </p><input name="cep" type="tel" placeholder="CEP apenas numeros" size="100" maxlength="8" required="required"/>
-                <p class="logradouro">Logradouro: </p> <input name="logradouro" type="text" placeholder="endereço" size="100" maxlength="100" required="required"/>
-                <p class="numero">Número: </p><input name="num" type="number" placeholder="Número" size="100" maxlength="10" required="required"/>
-                <p class="bairro">Bairro: </p><input name="bairro" type="text" placeholder="Bairro" size="100" maxlength="100" required="required"/>
-                <p class="cidade">Cidade: </p><input name="cidade" type="text" placeholder="Cidade" size="100" maxlength="100" required="required"/>
-                <p class="estado">Estado: </p><input name="estado" type="text" placeholder="Estado (ex:SP)" size="100" maxlength="2" required="required"/>
-            </section>
+
+                <label for="cep">CEP: </label> 
+                <input type="text" id="cepid" placeholder="xxxxx-xxx" required="required" name="cep" />
+
+                <label for="endereco">Logradouro: </label> 
+                <input type="text" id="endid" placeholder="Endereço" required="required" name="endereco" />
+
+                <label for="num">Numero: </label> 
+                <input type="text" id="numid" placeholder="Numero" required="required" name="num" />
+
+                <label for="bairro">Bairro: </label> 
+                <input type="text" id="bairroid" placeholder="Bairro" required="required" name="bairro" />
+
+                <label for="cidade">Cidade: </label> 
+                <input type="text" id="cidadeid" placeholder="Cidade" required="required" name="cidade" />
+
+                <label for="estado">Estado: </label> 
+                <input type="text" id="estadoid" placeholder="Estado (exemplo: SP)" required="required" name="estado" />
+
         </div>
-        <button type="submit" onclick="return validar()"> Enviar </button>
+        
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar"/>
+
     </form>
-
-    
-    
 </body>
-
 </html>
